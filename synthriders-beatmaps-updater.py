@@ -22,7 +22,7 @@ except Exception as e:
     exit(1)
 
 download_queue = []
-for i in count():
+for i in count(1):
     try:
         print(f"fetching {url_template.format(i)} ...")
         response = json.load(url.urlopen(url.Request(url_template.format(i), None, headers)))
