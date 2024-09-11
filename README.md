@@ -10,4 +10,9 @@ A simple script to download all missing costum maps from synthriderz.com
   - right-click on desktop -> new -> shortcut
   - copy the bat file & paste it into the location box (dragging doesn't work)
 
-To run it, just double-click `synthriders-beatmaps-updater.bat` 
+To run it, just double-click the bat file
+
+Use `synthriders-beatmaps-updater.bat` to download new maps.
+It stops when it finds 100 new maps in a row that are already saved locally.
+
+`synthriders-beatmaps-update-everything.bat` checks every published map on synthriderz.com. This can take a bit longer.
