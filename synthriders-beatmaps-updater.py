@@ -13,13 +13,18 @@ beatmaps_url = 'https://synthriderz.com/api/beatmaps?publishedOnly=true'
 headers = {'User-Agent' : "dl-script"}
 
 try:
+    local_maps = set(os.listdir(beatmap_dir))
+except Exception as e:
+    print(e)
+    input("press enter to exit...")
+    exit(1)
+
+try:
     beatmaps = json.load(url.urlopen(url.Request(beatmaps_url, None, headers)))
 except:
     print("ERROR: couldn't download beatmaps list")
     input()
     exit(1)
-
-local_maps = set(os.listdir(beatmap_dir))
 
 
 download_queue = [m for m in beatmaps if m['filename'] not in local_maps]
