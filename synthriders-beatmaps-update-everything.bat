@@ -1,1 +1,0 @@
-py -3 synthriders-beatmaps-updater.py update-everything
