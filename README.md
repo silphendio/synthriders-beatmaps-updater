@@ -1,18 +1,17 @@
-# synthriders-beatmaps-updater
-A simple script to download all missing costum maps from synthriderz.com
+# Synthriders Beatmaps Updater
+A simple script to download all missing costum maps from `synthriderz.com` (Steam/PC Version).
+
+There's no User Interface. Just double-click the bat file and wait for it to finish.
+It shouldn't take much longer than it takes to download everything.
 
 ### Setup:
 - make sure `python` is installed. You can get it in the windows store.
 - Download the code ( click `code` -> `download zip` on github, and extract the files somewhere)
-- Edit the `synthriders-beatmaps-updater.py` to make sure that `beatmap_dir` is the costum maps directory
-- (optional) create a desktop shortcut to the bat file
-  on Windows 11:
-  - right-click on desktop -> new -> shortcut
-  - copy the bat file & paste it into the location box (dragging doesn't work)
+- The script assumes that the costum maps are in `C:\Program Files (x86)\Steam\steamapps\common\SynthRiders\SynthRidersUC\CustomSongs`
+  This should be the case in a stardard installation of the Synth Riders Beta Version.
+  Otherwise, open `sr-update.py` with a text editor and change `beatmap_dir` on line 12.
 
-To run it, just double-click the bat file
+Use `sr-update.bat` to download new maps.
+It checks 100 maps at a time, newest first. When the 50 oldest of those were already installed, it stops checking older ones.
 
-Use `synthriders-beatmaps-updater.bat` to download new maps.
-It stops when it finds 100 new maps in a row that are already saved locally.
-
-`synthriders-beatmaps-update-everything.bat` checks every published map on synthriderz.com. This can take a bit longer.
+`sr-update-all.bat` checks every published map on synthriderz.com. This takes a bit longer.
