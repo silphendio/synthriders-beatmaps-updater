@@ -14,6 +14,7 @@ beatmap_dir = r"C:\Program Files (x86)\Steam\steamapps\common\SynthRiders\SynthR
 
 update_everything = len(sys.argv) > 1 and sys.argv[1] == "update-everything"
 url_template = "https://synthriderz.com/api/beatmaps?select=title,filename,hash,published_at&limit=100&page={}&sort=published_at,DESC"
+map_url_template = "https://synthriderz.com/api/beatmaps/hash/download/{}"
 headers = {'User-Agent' : "dl-script"}  # because synthriderz.com blocks the default user agent (Python-urllib) for some reason.
 
 
@@ -67,7 +68,7 @@ for i, m in enumerate(download_queue):
     print(f'file {i}\tof {len(download_queue)}: {m['title']}')
     while True: # retry loop
         try:
-            map_url = f'https://synthriderz.com/api/beatmaps/hash/download/{m['hash']}'
+            map_url = map_url_template.format(m['hash'])
             print(f'fetching {map_url}...')
             beatmap = url.urlopen(url.Request(map_url, None, headers)).read()
         except:
