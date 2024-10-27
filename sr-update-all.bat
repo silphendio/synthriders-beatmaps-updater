@@ -1,0 +1,1 @@
+py -3 sr-update.py update-everything
