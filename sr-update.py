@@ -9,7 +9,7 @@ import zipfile
 
 
 # you may need to change this
-beatmap_dir = r'C:\Program Files (x86)\Steam\steamapps\common\SynthRiders\SynthRidersUC\CustomSongs'
+beatmap_dir = r"C:\Program Files (x86)\Steam\steamapps\common\SynthRiders\SynthRidersUC\CustomSongs"
 
 
 update_everything = len(sys.argv) > 1 and sys.argv[1] == "update-everything"
