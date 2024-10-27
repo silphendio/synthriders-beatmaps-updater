@@ -12,6 +12,6 @@ It shouldn't take much longer than it takes to download everything.
   Otherwise, open `sr-update.py` with a text editor and change `beatmap_dir` on line 12.
 
 Use `sr-update.bat` to download new maps.
-It checks 100 maps at a time, newest first. When the 50 oldest of those were already installed, it stops checking.
+It checks 100 maps at a time, newest first. When the 50 oldest of those were already installed, it stops checking older ones.
 
 `sr-update-all.bat` checks every published map on synthriderz.com. This takes a bit longer.
