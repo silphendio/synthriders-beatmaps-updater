@@ -61,7 +61,7 @@ for i in count(1):
     
 
 print(f'{len(download_queue)} files in queue')
-
+download_queue.reverse() # older maps should be downloaded first
 
 
 for i, m in enumerate(download_queue):
