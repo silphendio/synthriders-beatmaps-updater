@@ -1,8 +1,9 @@
-# Synthriders Beatmaps Updater
-A simple script to download all missing costum maps from `synthriderz.com` (Steam/PC Version).
+# Synthriders Beatmaps Updater (for PC)
+
+This script downloads all maps published on `synthriderz.com` that aren't in your `CostumSongs` folder.
 
 There's no User Interface. Just double-click the `.bat` file and wait for it to finish.
-It shouldn't take much longer than it takes to download the missing maps.
+It shouldn't take much longer than it takes to download the maps.
 
 ### Setup:
 - make sure `python` is installed. You can get it in the windows store.
