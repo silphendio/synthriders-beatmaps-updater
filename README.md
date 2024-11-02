@@ -1,4 +1,4 @@
-# Synth Riders Beatmaps Updater (for PC)
+# SynthRiders Beatmaps Updater (for PC)
 
 This script downloads all maps published on `synthriderz.com` that aren't in your `CostumSongs` folder.
 
