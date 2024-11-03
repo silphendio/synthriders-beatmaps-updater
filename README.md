@@ -1,6 +1,6 @@
 # SynthRiders Beatmaps Updater (for PC)
 
-This script downloads all maps published on `synthriderz.com` that aren't in your `CostumSongs` folder.
+This script downloads all maps published on `synthriderz.com` that aren't in your `CustomSongs` folder.
 
 There's no User Interface. Just double-click the `.bat` file and wait for it to finish.
 It shouldn't take much longer than it takes to download the maps.
